@@ -195,3 +195,157 @@
 
 
 // console.log(arr2);
+
+//find the longest word in a string
+// function longWord (str) {
+//     //naming a variable to the method of the str being split it sub-arrays
+//     let strSplit = str.split(' ');
+//     //initalizing the variable to be set for zero for now
+//     let longestWord = 0;
+//     //create a forloop
+//     for (let i = 0; i < strSplit.length; i++) {
+//         //if string i is bigger than the word its being compared with...
+//         if(strSplit[i].length > longestWord) {
+//             longestWord = strSplit[i].length; //then the longest word takes the new spot of var longestword
+//         }
+            
+//     }
+//     return longestWord;
+// }
+
+// console.log(longWord("hi hello wuts up tyrannosaurus rex"));
+
+
+
+//check an array and see if it has duplicates
+
+
+
+
+
+//return indexes of two numbers that equal the target number
+
+
+
+// //reverse a string
+// function revString(str) {
+//     //string first must be split up in seperate sub arrays
+//     //then use the reverse method to reverse the indeces 
+//     //lastly, we re-join the subarrays to single array.
+//     return str.split("").reverse().join("");
+// }
+// console.log(revString("hello"));
+// console.log(revString("I am Backwards"));
+
+
+
+// function findP(str) {
+//     const newStr = str.toLowerCase().split("").reverse().join('')
+//         return str.toLowerCase() == newStr ? true : false
+// }
+
+// console.log(findP("raCecar"))
+// console.log(findP("interview"))
+
+// function findOcc(letter, string) {
+//     let count = 0
+//     for (let i = 0; i < string.length; i++) {
+//         if (string[i] === letter) {
+//             count++
+//         }
+        
+//     }
+//     return count
+// }
+
+// console.log(findOcc("p", "apple"))
+
+
+// function findDup(number) {
+//     let dup = []
+//     let obj = {}
+//     for (let i = 0; i < number.length; i++) {
+//         if (!obj[number[i]]) {
+//             obj[number[i]] = 1
+//         } else {
+//             dup.push([number[i]])
+//         }
+        
+//     }
+//     return dup
+// }
+
+// console.log(findDup([1,2,4,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,11]))
+
+
+//5 must know interview questions for javascript 
+
+//1. (meant to weed out beginners)
+//How do you add to the beginning or end of an array? 
+
+var myArray = ['a', 'b', 'c', 'd']
+myArray.push("end")
+myArray.unshift("begin")
+console.log(myArray)
+
+//2. how do you create a private variable in JS?
+
+function secretVariable() {
+    var private = "super secret code";
+    return function() {
+        return private
+    }
+}
+
+var getPrivateVariable = secretVariable()
+console.log(getPrivateVariable())
+
+//honestly i dont really get this 🤷‍♀️
+
+
+//3. What is the output of the function? (Checking your understanding of closures)
+
+var num = 4;
+function outer() {
+    var num = 2
+    function inner(){
+        num++;
+        var num = 3;
+        console.log(num)
+    }
+    inner();
+}
+outer();
+
+
+//the answer is 3. the first variable is irrelevant, the outer() just overrides and
+//takes a new assignment. then inner() just assigns a new number again and prints.
+//when inner() runs it prints 3, and when outer runs, it runs inner() therefore, still
+//just printing 3 afterall. 
+
+//4. What is the output?
+
+console.log(typeof (typeof 1));
+
+//while it looks like it should return integer, it returns string because 
+// typeof 1 returns "number", and when you ask for the type of again, it 
+//process your output "number" as a string.
+
+//5. What is the output?
+
+var hero = {
+    _name: "John Doe",
+    getSecretIdentity: function () {
+        return this._name;
+    }
+}
+
+var stoleSecretIdentity = hero.getSecretIdentity
+
+console.log(stoleSecretIdentity());
+console.log(hero.getSecretIdentity());
+
+//it will return undefined first, and then "John Doe"
+//if you were to add ".bind(hero)" to the end of var stoleSecretIdentity = hero.getSecretIdentity;
+//it would return "John Doe" twice.
+
