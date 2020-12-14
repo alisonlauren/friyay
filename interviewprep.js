@@ -49,31 +49,32 @@
 //the same, forward and backward
 
 function findP(str) {
-    const newStr = str.toLowerCase().split("")
+    const newStr = str.toLowerCase().split('')
     for (let i = 0; i < (newStr.length)/2 ; i++) {
-        if(newStr[i] == newStr[newStr.length - i- 1]) {
+        if (newStr[i] == newStr[newStr.length - i -1]) {
             return `${str} is a pallindrome`
         } else {
-            `${str} is not a pallindrome`
+            return `${str} is not a pallindrome`
         }
         
     }
 }
+
 console.log(findP("eye"));  //true
 console.log(findP("racecar")); //true
 console.log(findP("interview")); //false
-console.log(findP("function")); //false
+
 
 //or 
 
-function isPand(str) {
-    return str.split('').reverse().join('');
-}
-console.log(isPand("eye"))
-console.log(isPand("panda"))
+// function isPand(str) {
+//     return str.split('').reverse().join('');
+// }
+// console.log(isPand("eye"))
+// console.log(isPand("panda"))
 
-//14. ALGO QUESTION:
-// write function that returns occuring letters
+// //14. ALGO QUESTION:
+// // write function that returns occuring letters
 
 
 
@@ -88,11 +89,11 @@ function count(number, array) {
     return count
 }
 
-console.log(count(1, [1,2,3,2,1,1,3]))
+// console.log(count(1, [1,2,3,2,1,1,3]))
 
-//15. ALGO QUESTION:
-////given array of numbers 1-100, exactly one number in that array is a duplicate,
-//write method to find duplicate
+// //15. ALGO QUESTION:
+// ////given array of numbers 1-100, exactly one number in that array is a duplicate,
+// //write method to find duplicate
 
 function findDup(array) {
     let dup = [];
@@ -108,6 +109,22 @@ function findDup(array) {
     }
     return dup;
 }
+
+
+function findDup(array) {
+    let dup = []
+    let obj = {}
+    for (let i = 0; i < array.length; i++) {
+        if(!obj[array[i]]) {
+            obj[array[i]] = 1
+        } else {
+            dup.push(array[i])
+        } 
+    }
+    return dup
+}
+ 
+console.log(findDup([1,2,3,3,4,5,4]))
     
 
 console.log(findDup([1,2,3,3,4,5,4]))
