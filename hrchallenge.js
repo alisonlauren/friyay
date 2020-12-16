@@ -3,6 +3,7 @@
 // write a function that takes in an array of distinct integers and a target sum
 // if any two numbers in the input array sum up to the target sum return the two numbers
 
+// 1. Two number sum in an array
 
 function twoNumberSum(array, targetSum) {
     //essentially, setting up two "pointers", i and j
@@ -26,6 +27,8 @@ function twoNumberSum(array, targetSum) {
 }
 
 
+// 2. CHeck if valid subsequence
+
 //given two non empty arrays of integers, write a function that determines whether the second array is a subsequence of the first one
 //example: // array = [5, 1, 22, 25, 6, -1, 8, 10]
 //sequence = [1, 6, -1, 10]
@@ -46,7 +49,11 @@ function isValidSubsequence(array, sequence) {
     return seqIdx === sequence.length;
 }
 
-//Find Closest Value in BST
+
+
+
+// 3. Find Closest Value in BST
+
 //Write a function that takes in a binary Search Tree and a target integer value
 //and returns the closest value to that target value contained in the BST.
 
