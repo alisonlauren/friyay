@@ -92,3 +92,40 @@ class BST {
         this.right = null;
     }
 }
+
+
+
+//Write a function that takes in a Binary Tree and returns a list of its branch
+//sums ordered from leftmost branch sum to rightmost branch sum.
+
+class BinaryTree {
+    constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+function branchSums(root) {
+    //appends value to list
+    const sums = []
+    calculateBranchSums(root, 0, sums)
+    return sums;
+}
+//the recursive function 
+function calculateBranchSums(node, runningSum, sums) {
+    if (!node) return;
+
+    const newRunningSum = runningSum + node.value;
+    if (!node.left && !node.right) {
+        sums.push(newRunningSum);
+        return;
+    }
+    calculateBranchSums(node.left, newRunningSum, sums);
+    calculateBranchSums(node.right, newRunningSum, sums);
+
+}
+
+
+exports.BinaryTree = BinaryTree;
+exports.branchSums = branchSums;
