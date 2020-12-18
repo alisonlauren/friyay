@@ -1,13 +1,5 @@
-//react questions
-//1. Why do you want to work for us?
-
-import * as React from "react";
-import "./styles.css"
-
-export default function App() {
-    return (
-        <div className="App">
-            <h1>Hello CodeSandox</h1>
-        </div>
-    )
-}
+const numbers = [10, 20, 30, 40]
+const add = (a, b) =>
+a + b
+const sum = numbers.reduce(add)
+console.log(sum)

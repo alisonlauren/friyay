@@ -84,7 +84,7 @@ function findClosestValueinBstHelper(tree, target, closest) {
 
 }
 
-// This is the class of the input tree. Do not edit.
+
 class BST {
     constructor(value) {
         this.value = value;
@@ -95,7 +95,7 @@ class BST {
 
 
 
-//Write a function that takes in a Binary Tree and returns a list of its branch
+// 4. Write a function that takes in a Binary Tree and returns a list of its branch
 //sums ordered from leftmost branch sum to rightmost branch sum.
 
 class BinaryTree {
@@ -129,3 +129,45 @@ function calculateBranchSums(node, runningSum, sums) {
 
 exports.BinaryTree = BinaryTree;
 exports.branchSums = branchSums;
+
+
+// 5. calculate an array using the fib sequence
+
+const fib = (n) => n <= 2 ? 1 : fib(n - 1) + fib(n - 2);
+
+console.log(fib(28));
+
+//6. calculate a base to its power (example 2 to the 2 second power is 4) 
+const power = (base, exponent) => {
+    //if exponent is equal to zero that just return the number 1
+    if(exponent === 0) return 1;
+    //otherwise base x power
+    return base * power(base, --exponent);
+}
+
+//7. write a function called productOfArray which takes in an array of numbers and returns the product of them all.
+// productOfArray([1, 2, 3]) //6
+// productOfArray([1, 2, 3, 10]) //60
+​
+const productOfArray = (arr) => {
+    //arrow function, setting total for 1
+    let total = 1;
+​       //if there's nothing in the array than return the total as is
+    if(arr.length === 0){
+        return total;
+    }
+    //otherwise, total is equal to the array, times each item, seperated by 1
+    total = arr[0] * productOfArray(arr.slice(1));
+    return total;
+}
+​
+console.log(productOfArray([1, 2, 3])) //6
+
+//or
+
+const numbers = [10, 20, 30, 40]
+const add = (a, b) =>
+a + b
+const sum = numbers.reduce(add)
+console.log(sum)
+
