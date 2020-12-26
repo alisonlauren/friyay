@@ -4,10 +4,16 @@
 //the recognization that in react data only flows in one, and only direction.
 //the only view you see in react, is the status of your state, in order to change
 //you would have to change the data.
+//in this certain problem, you can fix it by giving an actual value change in the onchange handler
+//with setState(e.target.value);
 
 //2. What is the difference between props and state?
 //state referrs to the status of the component, which can be altered within the component of
 //within the data. While props is passing inheritence from one comp to another.
+//state can be changed, and props cannot change unless changing the parent component.
+
+//3. What is the concept of "Lift State Up"?
+
 
 //3. Difference between controlled and uncontrolled component?
 //in a controlled comp, form data is handled by react componenent, while
