@@ -17,12 +17,12 @@
 // put the two components together as siblings in a single componenet 
 //because they will operate in sync anyways 
 
-//3. Difference between controlled and uncontrolled component?
+//4. Difference between controlled and uncontrolled component?
 //in a controlled comp, form data is handled by react componenent, while
 //an uncontrolled the form data is handled by the DOM itself.
 //uncontrolled in not bound to state or onchange. need to change it? use a ref.
 
-//4. What are refs in react?
+//5. What are refs in react?
 // in regular JS, you can use that ID to query select and use the focus method,
 //but focus method doesn't exist in JSX. Use refs come in to play this way,
 //attatch ref to jSX element, getting access to underlying DOM node. 
@@ -40,15 +40,30 @@
 //that dont need to be on screen. 
 //useful when you dont want a user to have a token for more than 15 minutes in idle, 
 // create a client side timer, render cycle will continue until it hits 15 min, then log them out
+//
 
-
-
-//5. Importance of keys?
+//6. Importance of keys?
 //keys are for iterating over an array of items, giving it unique key idenitfiers
 //they are important because they can help you specifically identify what you want rendered
 //react does not render duplicate keys.
 
-//6. What is context and its purpose?
+//7. What is context and its purpose?
 //context is a mechanism to pass data between components like props,
 //but props move down components like a parent. if parent wants to go to grandchild,
 //context allows that. while props would need to pass from parent-child-grandchild.
+
+//8. What is an high order component?
+//still relevant, they've been used heavily in the past, to understand now we must under stand the past
+// function that receives a component as an arguement, then returns a newly augmented component
+//ability to share logic within the app without having to re-write logic over and over
+
+//9. What is a render prop?
+//Render props is a pattern in react which helps us to pass the functions as a prop to the 
+//components so that we can decide the component rendering logic instead of let 
+//component render it’s own logic
+
+//10. what are hooks, and how are they useful?
+//allows us to hook into the lifecylce methods of a functional component, without defining a class
+//help us share our own customized logic which we can use across different components
+// useeffect hook can act like a component didmount, didupdate, unmount
+
