@@ -67,3 +67,27 @@
 //help us share our own customized logic which we can use across different components
 // useeffect hook can act like a component didmount, didupdate, unmount
 
+//11. Explain Error Boundaries?
+// to catch errors, like try catch. if an error happens, catch.. aka... do this if error happens
+//static getDerivedStateFromError, change the state accordingly
+//a fallback component can render, like a plan B. 
+//componentDidCatch. 
+
+//12. Best LifeCycle method for making API calls?
+// when you make an API call it pulls data from the server,
+//when you make the call you make sure DOM is ready, component didmount, or useEffect
+//
+
+//13. name some react patterns and usage?
+//context-api pattern: when we pass props in deeply rooted component, allows you to access
+//to be wrapped in a special tag
+//render props: using children comp as functions, pass them as functions instead of comp
+
+//14. Why would you use react in your project?
+// depends on project, like where you are in your project lifecycle, which framework is changing
+//in the next 6 months. 
+
+//15. What is CSS-in-JS pattern?
+//inline css in JSX
+
+//16. 
