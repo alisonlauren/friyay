@@ -90,4 +90,17 @@
 //15. What is CSS-in-JS pattern?
 //inline css in JSX
 
-//16. 
+//16. Why can't you update state directly without setState()?
+//setState will always trigger re rendering of the componenet,
+//directly setting the state wont work.
+
+//17. How many ways you can conditionally render in react?
+//with an if statement, using expression, conditional operator
+
+//18. What is fragments, and why do we use them?
+// is for a component to return multiple elements. Fragments 
+//let you group a list of children without adding extra nodes to the DOM.
+// you can declare them with empty jsx tags or <React.Fragment> </React.Fragment>
+// make rendering groups of elements a lot easier without adding extra markup.
+
+//19. 
