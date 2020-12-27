@@ -141,5 +141,16 @@
 //is kept in memory and synced with the “real” DOM by a library such as ReactDOM. 
 //This process is called reconciliation.
 
-//26. 
+//26. Algo/debugging
+//fix it for me, state may not be updating, typos? console.log as you can
+//understand what's going on first
+//add functionality, ask questions, use paper and pen to explain logic
+
+
+//27. EXPLAIN YOUR PROJECT:
+
+
+//28. 
+
+
 
