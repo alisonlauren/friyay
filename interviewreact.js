@@ -103,4 +103,43 @@
 // you can declare them with empty jsx tags or <React.Fragment> </React.Fragment>
 // make rendering groups of elements a lot easier without adding extra markup.
 
-//19. 
+//19. How to do code-splitting in react?
+// when the react node compiles, it creates a single large file that is bad if you have a 
+//huge project. you can split the code with dynamic import, you use react.lazy to init
+//a component, loads async, need to provide some type of fallback componment so it wont break
+
+//20. What are some alternatives to redux?
+// mobX, appolo client + graphQL, RxJS
+
+//21. What is redux middleware?
+//middlewares are used to deal with asynchronous actions in your app. Redux provides with API called applyMiddleware which 
+//allows us to use custom middleware as well as Redux middlewares like redux-thunk 
+//and redux-promise.
+
+//22. What is the diff between redux-saga and redux-thunk?
+// both middlewares, in saga you can cancel actions
+
+//23. What is a promise?
+//A Promise in JavaScript is a object representing a value which may be available 
+//in the future. For example, when asking the JavaScript runtime to make a request 
+//to Twitter, it might give you a Promise of the HTTP response instead of giving you 
+//the response immediately.
+
+//24. How to optimize a react app?
+//depends on complexity of app, "how big is this application?","What does the application do?",
+//"What is breaking?". If preformance related, it may be rendering componenets that shouldn't rerendering
+// if you're setting the same state over and over, it can slow the app down. you could use ShouldComponentUpdate,
+//if the file size is huge taking to long to load, you can use lazyload certain routes.
+// perhaps the API are slows, sever side improvement. perhaps the methods of updating state is incorrect
+//videos and images may be loading slowly. changing class components to functional components could
+//amp run time. //arrow function could improve run time. 
+
+//25. Explain virtual DOM?
+// react came up with virtual dom, updating the dom can be expensive you have to repaint on the dom//
+//update as less as possible. 
+//The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI 
+//is kept in memory and synced with the “real” DOM by a library such as ReactDOM. 
+//This process is called reconciliation.
+
+//26. 
+
