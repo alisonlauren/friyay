@@ -148,9 +148,57 @@
 
 
 //27. EXPLAIN YOUR PROJECT:
+//i recently created a e commerce react application where I focused my energy in the functionality of the project.
+//the features included, password protected user login, setting up paypal with paypal developer, 
+//at this point its only in the sandbox version, the ability to "add to cart", with the functionality
+//to add subtotal, tax, you can see your order history as well as your "status" of payment and delivered,
+//you can browse product, read more about the product and change your profile information.
+//I used mongoDB to set up my database, I used redux in order to build my store of functionalities,
+//
 
 
-//28. 
+//28. Name lifecycle methods and their purpose?
+//lifecycle methods are changing, depends on your version
+// constructor: runs only once, sets init state, this.state = {}, then use setState
+// render: the inital render
+// useEffect and hooks: Using the Effect Hook Hooks are a new addition in React 16.8. 
+//They let you use state and other React features without writing a class. 
+//The Effect Hook lets you perform side effects in function components
+
+//29. Why do we use arrow functions in react?
+//first off, they do make your code look cleaner and more presentable. 
+// one benefit of using arrow functions is that "this" is already bound to that function
+//so we don't need to specify that anywhere else.
+
+//30. How to prevent components from re-rendering?
+// react.memo, shouldComponentUpdate or React.PureComponent
+
+//31. What do you know about BoltSource?
+//help companies transform their digital presence and develop delightful digital experiences 
+//that are uncompromisingly fast, secure, and reliable.
+// help companies design new features quickly,
+
+
+//32. What made you want to apply at BoltSource?
+// The values, especially extreme ownership, is that related to the book 
+//extreme ownership by jocko willink? quality growth and empathy
+
+//
 
 
 
+
+
+import React from "react";
+import "./styles.css";
+
+import {useState} = React;
+
+export default function App() {
+    return (
+        <div className="App">
+            <h1>Hello CodeSandbox</h1>
+            <h2>Start editing to see some magic happen!</h2>
+        </div>
+    );
+}
