@@ -11,3 +11,4 @@ function isPalindrome(string) {
 }
 
 console.log(isPalindrome('racecar'))
+console.log(isPalindrome(''))

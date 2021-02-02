@@ -228,21 +228,21 @@
 
 
 // //reverse a string
-// function revString(str) {
-//     //string first must be split up in seperate sub arrays
-//     //then use the reverse method to reverse the indeces 
-//     //lastly, we re-join the subarrays to single array.
-//     return str.split("").reverse().join("");
-// }
+function revString(str) {
+    //string first must be split up in seperate sub arrays
+    //then use the reverse method to reverse the indeces 
+    //lastly, we re-join the subarrays to single array.
+    return str.split("").reverse().join("");
+}
 // console.log(revString("hello"));
 // console.log(revString("I am Backwards"));
 
 
 
-// function findP(str) {
-//     const newStr = str.toLowerCase().split("").reverse().join('')
-//         return str.toLowerCase() == newStr ? true : false
-// }
+function findP(str) {
+    const newStr = str.toLowerCase().split("").reverse().join('')
+        return str.toLowerCase() == newStr ? true : false
+}
 
 // console.log(findP("raCecar"))
 // console.log(findP("interview"))
