@@ -9,7 +9,7 @@ function onlyFindE(array) {
     const everythingElse = [];
     for (let index = 0; index < array.length; index++) {
         const string= array[index];
-        if (string.toLowerCase().includes('e')) {
+        if (string.includes('e')) {
             onlyE_Array.push(string)
         } else {
             everythingElse.push(string)
@@ -31,6 +31,7 @@ function fourOrMore(array) {
     for (let index = 0; index < array.length; index++) {
         const string = array[index];
         if (string.length >= 4) {
+            string.toLowerCase();
             newArray.push(string)
         }
         else {
